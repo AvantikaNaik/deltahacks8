@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
   
     "name": "HabitPet",
     "description": "This extension will be your productivity companion!",
