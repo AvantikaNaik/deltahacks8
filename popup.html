@@ -1,31 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-    <title>HabitPet</title>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <h1>Habit Pet</h1>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-    <div>
-      <img src="images/default.png" width="150" height="150">
-    </div>
-    <div>
-      <table class="center">
-        <tr>
-          <td><img src="images/diamond.png" width="30" height="30"></td>
-          <td>000</td>
-        </tr>
-        <tr>
-          <td><img src="images/clock.png" width="30" height="30"></td>
-          <td>1:00</td>
-        </tr>
-      </table>
-    </div>
-    <div class="center2">
-      <button class="center" id="sendShop">Shop</button>
-    </div>
-  </body>
+.alert {
+  padding: 100px;
+  width: 500px;
+  height: 100px;
+  size: 10px; 
+  background-color: #ffffff;
+  border-style: solid;
+  color: black;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+.blob{
+    padding: 5px;
+    width: 200px;
+    size: 10px;
+    position: relative;
+    bottom: 200px;
+    right: 0px;
+}
+
+.gem{
+    padding: 5px;
+    width: 90px;
+    size: 50px;
+    position:relative;
+    bottom:380px;
+    left: 75px;
+}
+.shop{
+    padding: 5px;
+    width: 75px;
+    size: 50px;
+    position:relative;
+    bottom:190px;
+    left: 175px;
+    
+}
+.button{
+  width: 50px;
+  height: 50px;
+  position:relative;
+  bottom:260px;
+  left: 500px;
+}
+.clock{
+  width: 75px;
+  height: 75px;
+  position:relative;
+  bottom:290px;
+  left: -10px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: pink;
+}
+</style>
+</head>
+<body>
+
+<div class="alert">
+  <span class="closebtn">
+  <style>
+  h3{position:relative;
+  top:-110px;
+  left: 90px}
+  </style>
+  <h3>&times;</h3> 
+  </span>  
+   <style>
+   h1{text-align: left;
+   position: relative;
+   top: -150px;
+   letter-spacing: 4px;
+   right: 95px;
+   font-family: 'Luckiest Guy', sans-serif;
+   font-size: 72px;}
+   </style>
+  <h1>HabitPets. </h1>
+  
+<img src="blob.png" alt="blob" class = "blob">
+<img src="shop-4.png" alt="shop" class = "shop">
+<img src="gem.png" alt = "gem" class = "gem">
+<img src = "clock.png" alt = "clock" class = "clock">
+<button class = "button buttonShop">
+  Shop
+</button>
+
+  
+
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+</body>
 </html>
+
