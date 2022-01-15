@@ -1,2 +1,2 @@
-# deltahacks8
-#TODO - DeltaHacks Project!
+# Welcome to HabitPets
+
