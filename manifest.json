@@ -1,6 +1,15 @@
 {
-    "name": "HabitPets",
-    "description": "Motivating Productivity",
+    "manifest_version": 2,
+  
+    "name": "HabitPet",
+    "description": "This extension will be your pet productive buddy!",
     "version": "1.0",
-    "manifest_version": 3
-  }
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab"
+     ]
+  } 
