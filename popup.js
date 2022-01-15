@@ -8,6 +8,9 @@ document.addEventListener(
         chrome.tabs.getSelected(null, function (tab) {
           d = document;
 
+          var diamonds = 10;
+          document.getElementById('sendShop').value = diamonds + 1;
+          
           var f = d.createElement("form");
           f.action = ""; // some url which does something when clicked upon
           f.method = "post";
