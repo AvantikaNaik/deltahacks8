@@ -1,8 +1,8 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
   
     "name": "HabitPet",
-    "description": "This extension will be your pet productive buddy!",
+    "description": "This extension will be your productivity companion!",
     "version": "1.0",
   
     "browser_action": {
