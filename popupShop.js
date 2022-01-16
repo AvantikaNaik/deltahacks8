@@ -17,3 +17,10 @@ window.onclick = function (event) {
     }
   }
 };
+
+
+
+// saving purchasing options
+function save_options() {
+  pass 
+}

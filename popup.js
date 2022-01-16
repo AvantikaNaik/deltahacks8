@@ -1,30 +1,23 @@
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    var checkPageButton = document.getElementById("checkPage");
-    checkPageButton.addEventListener(
-      "click",
-      function () {
-        chrome.tabs.getSelected(null, function (tab) {
-          d = document;
+function open_shop() {
+  chrome.tabs.create({url: chrome.extension.getURL('popupShop.html')});
+}
 
-          var diamonds = 10;
-          document.getElementById('sendShop').value = diamonds + 1;
-          
-          var f = d.createElement("form");
-          f.action = ""; // some url which does something when clicked upon
-          f.method = "post";
-          var i = d.createElement("input");
-          i.type = "hidden";
-          i.name = "url";
-          i.value = tab.url;
-          f.appendChild(i);
-          d.body.appendChild(f);
-          f.submit();
-        });
-      },
-      false
-    );
-  },
-  false
-);
+document.addEventListener('DOMContentLoaded', function () {
+  var gems = document.getElementById('gems');
+  var blob = document.getElementById('blob');
+  document.getElementById('shop').addEventListener('click', open_shop);
+
+  // var time = document.getElementById('time');
+  
+  // getting from storage the num gems and blob colors, storing in "items" with these
+  // being the default if they don't exist yet
+  chrome.storage.sync.get({
+    gems: 0,
+    blobstatus : "greengreen"
+  }, function (items) {
+    var gemCount = items.gems;
+    var blobstatus = items.blobstatus;
+    gems.textContent = gemCount.toString();
+    blob.src = blobstatus.src;
+  });
+});

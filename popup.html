@@ -1,42 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+	<title>HabitPets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div class="alert">
+<body>
+  <div class="alert">
   <span class="closebtn">
   <h3>&times;</h3> 
   </span>  
   <h1>Habit Pets </h1>
   
-<img src="blob.png" alt="blob" class = "blob">
-<img src="shop-4.png" alt="shop" class = "shop">
-<img src="gem.png" alt = "gem" class = "gem">
-<img src = "clock.png" alt = "clock" class = "clock">
+  <img src="blob.png" alt="blob" class = "blob">
+  <img src="shop-4.png" alt="shop" class = "shop">
+  <img src="gem.png" alt = "gem" class = "gem">
+  <img src = "clock.png" alt = "clock" class = "clock">
 
-<button class = "button buttonShop">
-  Shop
-</button>
+  <button id='shop' class="button">Shop</button>
 
-</div>
-
-<script>
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function(){
-    var div = this.parentElement;
-    div.style.opacity = "0";
-    setTimeout(function(){ div.style.display = "none"; }, 600);
-  }
-}
-</script>
-
+	<script src='popup.js'></script>
 </body>
 </html>
-
