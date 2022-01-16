@@ -2,6 +2,9 @@
 
 Working hard or hardly working? In an age with so many distractions, being productive is hard! HabitPets makes it fun to do tasks by giving you the cutest incentive - an adorable browser companion!
 
+## Installation
+Simply download all the files, go to chrome://extensions, make sure you're in developer mode (toggle it in the top right corner), and click on the Load Unpacked button. It will bring up your files, so navigate to this folder and add it in. Thus, the extension will be added! You can then go to the extensions toggle bar in the top right corner of Chrome to activate it!
+
 ## Inspiration
 For the Apple users out there, you might have hatched your very own Tamagotchi on the touch bar. Games like Webkinz also has users taking care of pets. We wanted to harness the adorable look of these pets while channeling their cuteness to inspire users to be more productive. Another consideration was that it's not enough to just block websites. That often leads to burnout and lower willpower. We wanted a way to reward productivity. Thus, HabitPets was born! By using our extension, you can make the CHANGE to be productive!
 
